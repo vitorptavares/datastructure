@@ -1,6 +1,7 @@
-package com.datastructure.linkedlist.com.datastructure;
+package linkedlist;
 
-import com.datastructure.stack.DijkstraAlgo;
+
+import stack.DijkstraAlgo;
 
 public class TestDijkstraAlgo {
     public static void main(String[] args) {

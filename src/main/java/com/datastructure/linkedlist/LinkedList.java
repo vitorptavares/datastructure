@@ -1,7 +1,7 @@
-package com.datastructure.linkedlist;
+package linkedlist;
 
 public class LinkedList<T extends Comparable<T>> implements List<T> {
-   private Node<T> rootNode;
+   private com.datastructure.linkedlist.Node<T> rootNode;
    private int numbOfItems;
 
 
@@ -9,7 +9,7 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
     public void insert(T data) {
         if(rootNode==null){
             //Entao esse é o primeiro elemento a ser adicionado na lista
-            rootNode = new Node<>(data);
+            rootNode = new com.datastructure.linkedlist.Node<T>(data);
         }
         else{
             insertAtBeginning(data);
@@ -18,7 +18,7 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
     }
     //Precisamos atualizar as referencias 0(1)
     private void insertAtBeginning(T data) {
-        Node newNode = new Node(data);
+        com.datastructure.linkedlist.Node newNode = new com.datastructure.linkedlist.Node(data);
         newNode.setNextNode(rootNode);
         rootNode = newNode;
     }
@@ -34,7 +34,7 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
         removeNode(data, rootNode);
     }
 
-    private void removeNode(T data, Node<T> node) {
+    private void removeNode(T data, com.datastructure.linkedlist.Node<T> node) {
         while (node.getNextNode()!=null){
             if(node.getNextNode().getData().compareTo(data)==0){
                 node.setNextNode(node.getNextNode().getNextNode());
@@ -64,7 +64,7 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
     public void transverse() {
         if(rootNode==null)
             return;
-        Node actualNode = rootNode;
+        com.datastructure.linkedlist.Node actualNode = rootNode;
         while (actualNode!=null){
             System.out.println(actualNode);
             actualNode = actualNode.getNextNode();

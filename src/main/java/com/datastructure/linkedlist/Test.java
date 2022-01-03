@@ -1,8 +1,8 @@
-package com.datastructure.linkedlist;
+package linkedlist;
 
 public class Test {
     public static void main(String[] args) {
-        List<String> linkedList = new LinkedList<>();
+        linkedlist.List<String> linkedList = new LinkedList<>();
         linkedList.insert("Vitor");
         linkedList.insert("Priscila");
         linkedList.insert("Levi");

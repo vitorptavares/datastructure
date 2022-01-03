@@ -1,4 +1,4 @@
-package com.datastructure.linkedlist;
+package linkedlist;
 
 public interface List<T> {
 

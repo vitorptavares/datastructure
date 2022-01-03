@@ -1,6 +1,6 @@
 package doublyLinkedList;
 
-import com.datastructure.linkedlist.List;
+import linkedlist.List;
 
 public class DoublyLinkedList<T extends Comparable<T>> {
     private Node<T> heap;

@@ -1,4 +1,4 @@
-package com.datastructure.stack;
+package stack;
 
 public class StackLinkedList <T> {
 
@@ -27,7 +27,7 @@ public class StackLinkedList <T> {
 
     //0(1)
     public void push(T data){
-        Node<T> newNode = new Node<>(data);
+        Node<T> newNode = new Node<T>(data);
         newNode.setNextNode(head);
         head = newNode;
         count++;
